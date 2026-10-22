@@ -1,15 +1,19 @@
 # 2portnw
 
-A responsive two-port network parameter calculator for ECE students. The first screen records which port variables are known (V₁, I₁, V₂, I₂). The calculator then accepts one known 2×2 parameter matrix and converts between Z, Y, hybrid h, inverse hybrid g, and ABCD representations.
+A simple two-port network parameter calculator for ECE students. Enter one known 2×2 parameter matrix and calculate the equivalent Z, Y, hybrid h, inverse hybrid g, and ABCD parameter sets. The app displays final numerical answers only—no step-by-step derivations.
 
-## Run locally
-This is a dependency-free static web app. Open `index.html` in a browser, or serve this folder with any static HTTP server.
+## Use it
 
-## Deploy to Vercel
-Create a Vercel project connected to this repository and set the Root Directory to `apps/2portnw`. No build command is required; output the static files in the root directory.
+Open `index.html` in a browser. No dependencies or build step are required.
 
-## Engineering notes
-- Variable selection alone does not uniquely determine a two-port network's parameters. A known parameter set or sufficient independent test measurements/equations are required.
-- Singular conversions are reported rather than silently returning invalid values.
-- Parameter conversion uses the convention stated on screen. ABCD is expressed as V₁ = A V₂ − B I₂ and I₁ = C V₂ − D I₂, with I₂ defined as entering port 2.
-- The first release focuses on linear two-port parameter conversions. The passive/active physical realizability of a network is not automatically verified by matrix conversion.
+## Parameter convention
+
+ABCD uses I₂ entering port 2:
+- V₁ = A V₂ − B I₂
+- I₁ = C V₂ − D I₂
+
+## Notes
+
+- Selecting variables alone cannot uniquely determine a network. You need a known parameter set or enough independent measurements/equations.
+- Singular conversions are marked unavailable; other valid conversions remain visible.
+- Parameter conversion does not independently verify whether a physical network is passive.
