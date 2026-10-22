@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#6d28d9"/></linearGradient><linearGradient id="two" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dbeafe"/></linearGradient></defs>
+<rect x="3" y="3" width="122" height="122" rx="30" fill="#f8fbff" stroke="#dbeafe" stroke-width="2"/>
+<rect x="10" y="10" width="108" height="108" rx="25" fill="url(#bg)"/>
+<path d="M28 39 Q29 22 49 22 Q68 22 68 39 Q68 49 55 59 L34 77 L69 77" fill="none" stroke="url(#two)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="54" y="58" width="47" height="38" rx="8" fill="#102d67" stroke="#bfdbfe" stroke-width="2"/>
+<path d="M59 78 H67 L72 68 L80 87 L86 73 L91 78 H97" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#fff" stroke="#c7d2fe" stroke-width="2"><circle cx="54" cy="65" r="4"/><circle cx="54" cy="88" r="4"/><circle cx="101" cy="65" r="4"/><circle cx="101" cy="88" r="4"/></g>
+</svg>
