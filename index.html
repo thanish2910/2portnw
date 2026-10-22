@@ -10,7 +10,7 @@
 </head>
 <body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">2P</div><span>2portnw</span></div><span class="pill">ECE TOOLKIT · PASSIVE NETWORKS</span></header>
-<section class="hero"><div class="eyebrow">Two-port network studio</div><h1>From circuit variables<br>to <span>network parameters.</span></h1><p class="sub">Choose what you know, enter a parameter set, and convert between Z, Y, h, g and transmission parameters.</p></section>
+<section class="hero"><div class="eyebrow">Two-port network studio</div><h1>From circuit variables<br>to <span>network parameters.</span></h1><p class="sub">Enter a known parameter set and instantly calculate the equivalent Z, Y, h, g and ABCD matrices. Just the final numerical answers—no derivation steps.</p></section>
 <section class="panel" id="screen1"><div class="stephead"><div><h2>What variables do you know?</h2><p>Select the port variables available in your question.</p></div><span class="step">STEP 1 OF 2</span></div>
 <div class="vargrid">
 <label class="varcard"><input type="checkbox" value="V1" checked><span class="symbol">V₁</span><span class="vlabel">Input voltage</span></label>
@@ -30,7 +30,7 @@
 <div class="divider"></div><div class="stephead"><div><h2 id="inputtitle">Enter Z matrix</h2><p id="inputdesc">V₁ = z₁₁I₁ + z₁₂I₂ · V₂ = z₂₁I₁ + z₂₂I₂</p></div><span class="tag" id="unitbadge">Ω</span></div>
 <div class="fields" id="fields"></div><div id="errorbox" aria-live="polite"></div>
 <div class="actions"><button class="btn" id="back">← Back</button><button class="btn" id="reset">Clear values</button><button class="btn primary" id="calculate">Calculate all conversions</button></div>
-<div id="output" class="hidden"><div class="resulttop"><h3>Converted parameter sets</h3><span class="tag">Live results</span></div><div class="results" id="results"></div><p class="resultnote">Conversions are derived independently from the same two-port equations. A singular target representation is shown as unavailable without hiding other valid results. ABCD uses I₂ entering port 2: V₁ = AV₂ − BI₂, I₁ = CV₂ − DI₂. Matrix conversion alone does not prove physical passivity.</p></div>
+<div id="output" class="hidden"><div class="resulttop"><h3>Converted parameter sets</h3><span class="tag">Live results</span></div><div class="results" id="results"></div><p class="resultnote">Only final numerical results are shown. A singular target representation is marked unavailable while other valid results remain visible. ABCD uses I₂ entering port 2: V₁ = AV₂ − BI₂, I₁ = CV₂ − DI₂. Matrix conversion alone does not prove physical passivity.</p></div>
 </section>
 <footer class="footer">2portnw · Built for learning two-port network theory · Check important results against your textbook.</footer>
 </main>
